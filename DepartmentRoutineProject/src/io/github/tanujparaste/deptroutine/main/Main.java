@@ -7,16 +7,18 @@ import io.github.tanujparaste.deptroutine.model.TechDepartment;
 public class Main {
 
     public static void main(String[] args) {
-	// display Admin Department functionalities
+	// Admin Department
 	AdminDepartment adminDept = new AdminDepartment();
+	// display all functionalities
 	System.out.println("Welcome to " + adminDept.departmentName());
 	System.out.println(adminDept.getTodaysWork());
 	System.out.println(adminDept.getWorkDeadline());
+	// get holiday information with the help of super class
 	System.out.println(adminDept.isTodayAHoliday());
 
 	System.out.println();
 
-	// display Hr Department functionalities
+	// Hr Department
 	HrDepartment hrDept = new HrDepartment();
 	System.out.println("Welcome to " + hrDept.departmentName());
 	System.out.println(hrDept.doActivity());
@@ -26,7 +28,7 @@ public class Main {
 
 	System.out.println();
 
-	// display Tech Department functionalities
+	// Tech Department
 	TechDepartment techDept = new TechDepartment();
 	System.out.println("Welcome to " + techDept.departmentName());
 	System.out.println(techDept.getTodaysWork());
